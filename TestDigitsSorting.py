@@ -29,7 +29,7 @@ def ConvertToBase(parLongToConvert) :
 #            javaSpecialConversion = parLong.toString()
 #            integerConverted = Integer.decode(javaSpecialConversion)
 #            return integerConverted
-output_directory = Path(r'/home/marcus/Desktop/temp')
+#    output_directory = Path(r'/home/marcus/Desktop/temp')
 output_directory = Path(r'c:/temp')
 
 for ind in Digits:
@@ -37,6 +37,8 @@ for ind in Digits:
     out_dir = output_directory.joinpath(ind)
     print(out_dir)
     out_dir.mkdir()
+#---------------------------------------------------------
+#    For testing
 #    with open(out_file,'w',encoding='utf-8') as out_file:
 #        out = csv.writer(out_file)
 #        line = ind
